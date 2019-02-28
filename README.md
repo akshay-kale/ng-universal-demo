@@ -1,0 +1,36 @@
+# Angular Universal
+ 
+
+## Getting Started
+
+clone this repository.
+
+---
+
+### Build Time Pre-rendering vs. Server-side Rendering (SSR)
+This repo demonstrates the use of 2 different forms of Server-side Rendering.
+
+**Pre-render** 
+* Happens at build time
+* Renders your application and replaces the dist index.html with a version rendered at the route `/`.
+
+**Server-side Rendering (SSR)**
+* Happens at runtime
+* Uses `ngExpressEngine` to render your application on the fly at the requested url.
+
+---
+
+### Installation
+* `npm install`
+* `node dist/server.js`
+
+
+
+### Development (Client-side only rendering)
+* run `npm run start` which will start `ng serve`
+
+### Production (Server-Side Rendering)
+**`npm run build:ssr && npm run serve:ssr`** - Compiles your application and spins up a Node Express to serve your Universal application on `http://localhost:4000`.
+
+
+
